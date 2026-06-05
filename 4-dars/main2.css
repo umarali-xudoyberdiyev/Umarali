@@ -1,0 +1,70 @@
+.div2 {
+  width: 350px;
+  height: 600px;
+  margin-left: 600px;
+  margin-right: 600px;
+  margin-top: 150px;
+  border-radius: 15px;
+  background: #15263f;
+}
+body {
+  background-color: #0d192c;
+}
+.img2 {
+  width: 302px;
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+.h12 {
+  width: 288px;
+  margin-left: 24px;
+  margin-right: 16px;
+  color: white;
+}
+
+.p2 {
+  color: #8bacd9;
+  margin-left: 24px;
+  margin-right: 16px;
+  width: 302px;
+}
+
+.bet1 {
+  margin-left: 10px;
+  color: white;
+}
+
+.img22 {
+  margin-left: 24px;
+}
+
+.chiziq {
+  margin-left: 24px;
+  margin-top: 20px;
+  width: 302px;
+  height: 1px;
+  background-color: #2e405a;
+}
+
+.img3 {
+  margin-left: 24px;
+}
+
+.img4 {
+  width: 33px;
+  margin-left: 24px;
+  margin-top: 16px;
+}
+
+.jules {
+  display: inline;
+}
+
+.name {
+  color: #8bacd9;
+}
+
+.name2 {
+  color: white;
+}

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.asos {
+  width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+}
+
+.top {
+  padding: 30px;
+}
+
+.top h2 {
+  color: #2ab2af;
+  margin-bottom: 10px;
+}
+
+.top h4 {
+  color: #c0df34;
+  margin-bottom: 15px;
+}
+
+.top p {
+  color: #98a6bd;
+  line-height: 1.6;
+}
+
+.bottom {
+  display: flex;
+}
+
+.chap {
+  flex: 1;
+  background: #2ab2af;
+  color: white;
+  padding: 30px;
+}
+
+.narx {
+  margin: 15px 0;
+}
+
+.pul {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.oyiga {
+  margin-left: 10px;
+  color: #bdeeee;
+}
+
+.chap button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #c0df34;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ong {
+  flex: 1;
+  background: #4abebd;
+  color: white;
+  padding: 30px;
+}
+
+.ong ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.ong li {
+  margin-bottom: 8px;
+  color: #e5ffff;
+}
+
+@media (max-width: 725px) {
+  .asos {
+    width: 90%;
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  .chap,
+  .ong {
+    width: 100%;
+  }
+
+  .chap {
+    border-radius: 0;
+  }
+
+  .ong {
+    border-radius: 0;
+  }
+
+  .top {
+    padding: 25px;
+  }
+
+  .chap,
+  .ong {
+    padding: 25px;
+  }
+
+  .chap button {
+    font-size: 16px;
+  }
+}
