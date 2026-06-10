@@ -320,9 +320,49 @@
 // console.log(ShakrYoq(["fanta", "cola", "water"])); //["water"]
 // console.log(ShakrYoq(["fanta", "cola"])); //[]
 // console.log(ShakrYoq(["lemonade", "beer", "water"])); //(["lemonade", "beer", "water"])
-//106-masala
-function NechtaSon(son) {
-  son.toString();
+// //106-masala
+// function NechtaSon(son) {
+//   son.toString();
+//   return son.lengis;
+// }
+
+// console.log(NechtaSon(123)); ///3
+// console.log(NechtaSon(56)); //2
+// console.log(NechtaSon(7154)); //4
+// console.log(NechtaSon(61217311514)); //11
+// console.log(NechtaSon(0)); //(0)
+// //107-masala
+// function engKattaSon(son) {
+//   return Number(
+//     String(son)
+//       .split("")
+//       .sort((a, b) => b - a)
+//       .join(""),
+//   );
+// }
+
+// console.log(engKattaSon(123)); // 321
+// console.log(engKattaSon("001")); // 100
+// console.log(engKattaSon(999)); // 999
+// console.log(engKattaSon(784)); // 874
+// //108-masala
+// function randomSon(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log(randomSon(5, 9)); // 5, 6, 7, 8 yoki 9
+//109-masala
+function narissistik(son) {
+  let raqamlar = String(son).split("");
+  let daraja = raqamlar.length;
+
+  let yigindi = raqamlar.reduce((sum, raqam) => {
+    return sum + Math.pow(Number(raqam), daraja);
+  }, 0);
+
+  return yigindi === son;
 }
 
-console.log(NechtaSon);
+console.log(narissistik(153)); // true
+console.log(narissistik(370)); // true
+console.log(narissistik(1652)); // false
