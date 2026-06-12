@@ -127,35 +127,6 @@ let products = [
   { id: 5, name: "Dell", price: 35000, rating: 4.9, discount: 30 },
 ];
 
-console.log("ID bo'yicha:");
-console.log(
-  "9:",
-  [...products].sort((a, b) => a.id - b.id),
-);
-
-console.log("NAME bo'yicha:");
-console.log(
-  "9:",
-  [...products].sort((a, b) => a.name.localeCompare(b.name)),
-);
-
-console.log("PRICE bo'yicha:");
-console.log(
-  "9:",
-  [...products].sort((a, b) => a.price - b.price),
-);
-
-console.log("RATING bo'yicha:");
-console.log(
-  "9:",
-  [...products].sort((a, b) => a.rating - b.rating),
-);
-
-console.log("DISCOUNT bo'yicha:");
-console.log(
-  "9:",
-  [...products].sort((a, b) => a.discount - b.discount),
-);
 //10-masala
 const bestProduct = [...products].sort((a, b) => b.rating - a.rating)[0];
 
