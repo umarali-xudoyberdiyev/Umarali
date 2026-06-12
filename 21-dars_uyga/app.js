@@ -38,19 +38,17 @@ const animals = [
   "rabbit",
 ];
 
-function Hayfonlarsoni(arr) {
-  let result = {};
-
-  for (let i of arr) {
-    if (result[i]) {
-      result[i]++;
-    } else {
-      result[i] = 1;
-    }
+let Hsoni = animals.reduce((acc, cut) => {
+  if (acc[cut]) {
+    acc[cut] += 1;
+  } else {
+    acc[cut] = 1;
   }
 
-  return result;
-}
+  return acc;
+}, {});
+
+console.log(Hsoni);
 
 console.log("2:", Hayfonlarsoni(animals));
 // { dog: 2, chicken: 3, cat: 1, rabbit: 1 }
@@ -60,17 +58,11 @@ let kvadrat = arr.map((x) => x * x);
 console.log("3:", kvadrat);
 // [1, 4, 9, 16, 25]
 //4-masala
-const nubers = [1, -4, 12, 0, -3, 29, -150];
+let arr = [1, -4, 12, 0, -3, 29, -150];
 
-let sum = 0;
+let result = arr.filter((num) => num > 0).reduce((sum, num) => sum + num, 0);
 
-for (let i of nubers) {
-  if (i > 0) {
-    sum += i;
-  }
-}
-console.log("4:", sum);
-// 42
+console.log(result); // 42
 //5-masala
 const str = "George Raymond Richard Martin";
 
@@ -106,16 +98,16 @@ function ajrat(arr) {
 console.log("7:", ajrat([1, 2, 3, 4, 5, 6, 7, 8]));
 // { juft: [ 2, 4, 6, 8 ], toq: [ 1, 3, 5, 7 ] }
 //8-masala
-const arr2 = [1, 2, 3, 2, 4, 5, 1, 6];
+let arr = [1, 2, 3, 2, 4, 1, 5, 3];
 
-const result2 = arr2.reduce((acc, item) => {
+let newArr = arr.reduce((acc, item) => {
   if (!acc.includes(item)) {
     acc.push(item);
   }
   return acc;
 }, []);
 
-console.log("8:", result2);
+console.log(newArr);
 // [1, 2, 3, 4, 5, 6]
 //9-masala
 
@@ -207,12 +199,18 @@ const str19 = "Men Abdulaziz Programmerman";
 const hasSpace = str19.split("").some((ch) => ch === " ");
 console.log("19:", hasSpace);
 
-// 21-masala
-function digitSum(n) {
-  if (n === 0) return 0;
-  return (n % 10) + digitSum(Math.floor(n / 10));
-}
-console.log("21:", digitSum(1234));
+//20-masala
+const user = {
+  name: "Ali",
+  age: 20,
+  city: "Toshkent",
+};
+
+const result = Object.entries(user).map(([key, value]) => {
+  return [key, value].join(":");
+});
+
+console.log(result);
 
 // 22-masala
 const pupils = [
@@ -224,8 +222,12 @@ const pupils = [
   { name: "Kamron", percent: 75 },
 ];
 
-const ortacha = pupils.reduce((sum, p) => sum + p.percent, 0) / pupils.length;
-console.log("22", ortacha);
+let avg =
+  pupils.reduce((sum, pupil) => {
+    return sum + pupil.protcent;
+  }, 0) / pupils.length;
+
+console.log(avg);
 
 // 23-masala
 const grade23 = pupils.map((p) => ({
@@ -242,13 +244,21 @@ const pass24 = pupils.map((p) => ({
 console.log("24:", pass24);
 
 // 25-masala
-const result25 = pupils.reduce(
-  (exam, p) => {
-    if (p.percent > 70) exam.pass++;
-    else exam.fail++;
-    return exam;
+
+let result = pupils.reduce(
+  (acc, pupil) => {
+    if (pupil.protcent >= 70) {
+      acc.pass++;
+    } else {
+      acc.fail++;
+    }
+
+    return acc;
   },
-  { pass: 0, fail: 0 },
+  {
+    pass: 0,
+    fail: 0,
+  },
 );
 
-console.log("25:", result25);
+console.log(result);
