@@ -48,9 +48,8 @@ let Hsoni = animals.reduce((acc, cut) => {
   return acc;
 }, {});
 
-console.log(Hsoni);
+console.log("2:", Hsoni);
 
-console.log("2:", Hayfonlarsoni(animals));
 // { dog: 2, chicken: 3, cat: 1, rabbit: 1 }
 //3-masala
 const arr = [1, 2, 3, 4, 5];
@@ -58,20 +57,20 @@ let kvadrat = arr.map((x) => x * x);
 console.log("3:", kvadrat);
 // [1, 4, 9, 16, 25]
 //4-masala
-let arr = [1, -4, 12, 0, -3, 29, -150];
+let arr2 = [1, -4, 12, 0, -3, 29, -150];
 
 let result = arr.filter((num) => num > 0).reduce((sum, num) => sum + num, 0);
 
-console.log(result); // 42
+console.log("4", result); // 42
 //5-masala
 const str = "George Raymond Richard Martin";
 
-const result = str
+const result2 = str
   .split(" ")
   .map((word) => word[0])
   .join("");
 
-console.log("5:", result); // "GRRM"
+console.log("5:", result2); // "GRRM"
 //6-masala
 const users = [
   { name: "John", age: 13 },
@@ -98,7 +97,7 @@ function ajrat(arr) {
 console.log("7:", ajrat([1, 2, 3, 4, 5, 6, 7, 8]));
 // { juft: [ 2, 4, 6, 8 ], toq: [ 1, 3, 5, 7 ] }
 //8-masala
-let arr = [1, 2, 3, 2, 4, 1, 5, 3];
+let arr3 = [1, 2, 3, 2, 4, 1, 5, 3];
 
 let newArr = arr.reduce((acc, item) => {
   if (!acc.includes(item)) {
@@ -206,11 +205,11 @@ const user = {
   city: "Toshkent",
 };
 
-const result = Object.entries(user).map(([key, value]) => {
+const result3 = Object.entries(user).map(([key, value]) => {
   return [key, value].join(":");
 });
 
-console.log(result);
+console.log("20", result3);
 
 // 22-masala
 const pupils = [
@@ -224,10 +223,10 @@ const pupils = [
 
 let avg =
   pupils.reduce((sum, pupil) => {
-    return sum + pupil.protcent;
+    return sum + pupil.percent;
   }, 0) / pupils.length;
 
-console.log(avg);
+console.log("22", avg);
 
 // 23-masala
 const grade23 = pupils.map((p) => ({
@@ -245,7 +244,7 @@ console.log("24:", pass24);
 
 // 25-masala
 
-let result = pupils.reduce(
+let result4 = pupils.reduce(
   (acc, pupil) => {
     if (pupil.protcent >= 70) {
       acc.pass++;
@@ -261,4 +260,4 @@ let result = pupils.reduce(
   },
 );
 
-console.log(result);
+console.log("25", result4);
