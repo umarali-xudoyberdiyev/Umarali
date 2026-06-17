@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0d5c5c;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 25px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.Find {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+}
+
+.left h1 {
+  font-size: 70px;
+  line-height: 1.2;
+}
+
+.left span {
+  color: #f67e7e;
+}
+
+.right {
+  max-width: 400px;
+}
+
+.line {
+  width: 50px;
+  height: 4px;
+  background: #79c8c7;
+  margin-bottom: 20px;
+}
+
+.right p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 925px) {
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .Find {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px;
+  }
+
+  .left h1 {
+    font-size: 40px;
+  }
+
+  .right {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+
+  .line {
+    margin-bottom: 15px;
+  }
+
+  .right p {
+    font-size: 15px;
+  }
+}
