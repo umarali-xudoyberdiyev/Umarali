@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button id="show-modal-btn" onclick="toggleModal()">Click</button>
+    </div>
+
+    <div class="quiz-card hidden">
+      <h2 class="quiz-title">Manashu savolga chavobbering</h2>
+
+      <div class="code-container">
+        <pre><code>const nums = [5, 12, 3, 20, 8];
+
+let newNums = nums
+  .filter(x => x > 10)
+  .map(x => x * 2);
+
+let sum = newNums.reduce((a, x) => a + x, 0);
+
+console.log(sum);</code></pre>
+      </div>
+
+      <div class="options-grid">
+        <button onclick="J_NO()">Bilmayman</button>
+        <button onclick="TogriJavob()">64</button>
+        <button onclick="J_Num()">36</button>
+        <button onclick="J_Arr()">[24, 40]</button>
+      </div>
+    </div>
+
+    <div class="result-card hidden" id="resultCard">
+      <div class="result-box">TO'G'RI<br />JAVOB</div>
+      <button>64</button>
+    </div>
+
+    <div class="result-cardArr hidden" id="reduceWrongCard">
+      <div class="result-box wrong-text">
+        .reduce ni<br />ko'rmay<br />qoldinmi
+      </div>
+      <button>[24, 40]</button>
+    </div>
+
+    <div class="result-cardNum hidden" id="mapWrongCard">
+      <div class="result-box wrong-text">
+        .map(x =>; x * 2);<br />buyerda --/\-<br />ko'paytiruv<br />qo'shuv emas
+      </div>
+      <button>36</button>
+    </div>
+
+    <div class="result-cardNO hidden" id="mapWrongCard">
+      <div class="result-box wrong-text">Chatgpt<br />nimaga<br />kere</div>
+      <button>Bilmayman</button>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

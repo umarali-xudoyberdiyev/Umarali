@@ -3,9 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DOM</title>
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
+    <div class="container">
+      <button id="show-modal-btn" onclick="toggleModal()">
+        NO click please
+      </button>
+    </div>
+
+    <div class="modal hidden">
+      <button onclick="toggleModal()" class="x-mark">ortga qaytiz</button>
+      <p>Nimaga bostiz endi 3ta ispitaniya o'tishiz kerak</p>
+
+      <button onclick="bosqichBir()" class="close">
+        1chi ispitaniyani boshlash
+      </button>
+    </div>
+    <div class="modal hidden bosqichbir">
+      <p>Knopkani topishkere</p>
+      <button onclick="bosqichBir()" class="meni_top">click</button>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>
