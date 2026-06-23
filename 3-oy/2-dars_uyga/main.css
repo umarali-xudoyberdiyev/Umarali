@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  color: #222;
+  transition: 0.3s;
+}
+
+header {
+  max-width: 1100px;
+  height: 70px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 35px;
+}
+
+.active {
+  color: #e63946;
+}
+
+button {
+  border: none;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+#theme,
+#menuBtn {
+  background: none;
+  font-size: 22px;
+}
+
+#menuBtn {
+  display: none;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: 50px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.hero img {
+  width: 400px;
+}
+
+.heroText {
+  max-width: 400px;
+}
+
+.heroText button,
+.celebrate button {
+  background: #e63946;
+  color: white;
+
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: 0;
+
+  margin-top: 20px;
+}
+
+.giving {
+  text-align: center;
+  margin: 80px auto;
+}
+
+.giveBox {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+
+  margin-top: 40px;
+}
+
+.giveBox img {
+  width: 70px;
+}
+
+.celebrate {
+  max-width: 1000px;
+  margin: 80px auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.celebrate img {
+  width: 350px;
+}
+
+.title {
+  text-align: center;
+  margin: 60px;
+}
+
+.products,
+.newGifts {
+  max-width: 900px;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product,
+.newGifts div {
+  width: 170px;
+  height: 160px;
+
+  padding: 15px;
+
+  box-shadow: 0 5px 20px #ddd;
+
+  border-radius: 10px;
+}
+
+.product img,
+.newGifts img {
+  width: 80px;
+}
+
+.message {
+  max-width: 1000px;
+  margin: 100px auto;
+
+  background: #e63946;
+
+  border-radius: 20px;
+
+  padding: 40px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: white;
+}
+
+.message input {
+  padding: 15px;
+  border-radius: 30px;
+  border: 0;
+}
+
+.message img {
+  width: 250px;
+}
+
+footer {
+  max-width: 1000px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 50px 0;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.dark {
+  background: #111;
+  color: white;
+}
+
+.dark .product,
+.dark .newGifts div {
+  background: #222;
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 0 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #menuBtn {
+    display: block;
+  }
+
+  .hero,
+  .celebrate {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .hero img {
+    width: 280px;
+  }
+
+  .giveBox,
+  .products,
+  .newGifts,
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .message {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .mobileMenu {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: white;
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 35px;
+  }
+
+  .mobileMenu.show {
+    display: flex;
+  }
+
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    font-size: 35px;
+  }
+
+  .dark .mobileMenu {
+    background: #111;
+  }
+}
