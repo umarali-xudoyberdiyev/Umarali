@@ -15,15 +15,3 @@ BtnEl.addEventListener("click", () => {
   header.classList.toggle("header_color");
   cauntry.classList.toggle("header_color");
 });
-
-// BtnEl.addEventListener("doubleclick", () => {
-//   document.body.classList.remove("dark_mode");
-//   document.body.classList.add("light_mode");
-//   logoEl.classList.remove("dark_input");
-//   searchEl.classList.remove("dark_input");
-//   inputEl.classList.remove("dark_input");
-//   BtnEl.classList.remove("hidden");
-//   BtnEl2.classList.remove("dark_input");
-//   header.classList.add("header_color_light");
-//   BtnEl2.classList.remove("hidden");
-// });
