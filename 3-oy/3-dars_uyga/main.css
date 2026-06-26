@@ -4,6 +4,29 @@
   box-sizing: border-box;
 }
 
+button {
+  border: none;
+  background-color: #fff;
+}
+
+.header_color {
+  background-color: #2b3844;
+}
+
+.dark_input {
+  background-color: #2b3844;
+  color: white;
+}
+
+.light_input {
+  background-color: white;
+  color: black;
+}
+
+.dark_mode {
+  background-color: #202c36;
+}
+
 a {
   text-decoration: none;
 }
@@ -28,7 +51,7 @@ ol {
   padding-bottom: 24px;
 }
 
-.mode-btn {
+.mode_btn {
   border: none;
   display: flex;
   align-items: center;
@@ -82,8 +105,9 @@ select {
 }
 
 .cauntry {
-  max-width: 264px;
+  max-width: 500px;
   box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .country-intro {

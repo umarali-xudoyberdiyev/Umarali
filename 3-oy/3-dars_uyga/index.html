@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umarali</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav container">
+        <h2 class="logo">Where in the wold?</h2>
+        <!-- <img
+          src="./img/Where in the world_.svg"
+          alt="site logo"
+          class="logo-img"
+        /> -->
+        <a href="./index.html"></a>
+
+        <button class="mode_btn">
+          <img src="./img/moon.png" alt="" />
+          <span>Dark_Mode</span>
+        </button>
+        <!-- 
+        <button class="hidden" id="mode_btn_2">
+          <img src="./img/moon.png" alt="" />
+          <span>Dark Mode</span>
+        </button> -->
+      </nav>
+    </header>
+    <main>
+      <section class="filter">
+        <div class="container filter-container">
+          <div class="search-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              placeholder="Search for a country…"
+              class="search_Input"
+            />
+          </div>
+
+          <select class="select_option" name="" id="">
+            <option value="Africa">Africa</option>
+            <option value="America">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceaina">Oceaina</option>
+          </select>
+        </div>
+      </section>
+      <div class="container flags-conteiner">
+        <div class="cauntry">
+          <!-- <img src="./img/germaniya.png" alt="" />
+          <div class="country-intro">
+            <h2>Germany</h2>
+            <p>Population: <span>81,770,900</span></p>
+            <p>Region: <span>Europe</span></p>
+            <p>Capital: <span>Berlin</span></p>
+          </div> -->
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./dark.js"></script>
+    <script type="module" src="./data.js"></script>
+  </body>
+</html>

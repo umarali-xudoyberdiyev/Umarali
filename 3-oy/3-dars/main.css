@@ -1,0 +1,11 @@
+button {
+  border: none;
+}
+
+.dark_mode {
+  background-color: black;
+}
+
+.light_mode {
+  background-color: white;
+}
