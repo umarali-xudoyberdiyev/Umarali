@@ -42,10 +42,15 @@ inputEl.addEventListener("input", (e) => {
 
 selectEl.addEventListener("change", (e) => {
   let selectVal = e.target.value;
-  let newCountries = countries.filter((item) => {
-    if (item.region.toLowerCase().includes(selectVal.toLowerCase())) {
-      return item;
-    }
-  });
+
+  if (selectEl == "All") {
+    UpdeteUi(countries);
+  } else {
+    let newCountries = countries.filter((item) => {
+      if (item.region.toLowerCase().includes(selectVal.toLowerCase())) {
+        return item;
+      }
+    });
+  }
   UpdeteUi(newCountries);
 });
