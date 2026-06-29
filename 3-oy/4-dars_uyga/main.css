@@ -12,15 +12,11 @@ body {
 
 header {
   height: 80px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 0 60px;
-
   background: white;
-
   box-shadow: 0 2px 10px #ddd;
 }
 
@@ -31,9 +27,7 @@ header {
 .mode_btn {
   border: 0;
   background: none;
-
   cursor: pointer;
-
   font-size: 16px;
 }
 
@@ -43,93 +37,59 @@ main {
 
 .top {
   flex-wrap: wrap;
-
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
   margin-bottom: 40px;
-
   gap: 30px;
 }
 
 .search_Input {
   width: 500px;
-
   height: 55px;
-
   padding: 0 20px;
-
   border: 0;
-
   outline: none;
-
   border-radius: 6px;
-
   background: white;
-
   box-shadow: 0 0 10px #ddd;
 }
 
 .select_option {
   width: 180px;
-
   height: 55px;
-
   padding: 0 20px;
-
   border: 0;
-
   border-radius: 6px;
-
   background: white;
-
   box-shadow: 0 0 10px #ddd;
 }
 
 .flags-conteiner {
   justify-content: center;
-
   max-width: 1400px;
-
   margin: 0 auto;
-
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
   column-gap: 75px;
-
   row-gap: 50px;
-
   flex-wrap: wrap;
-
   display: flex;
 }
 
 .cauntry {
   max-width: 300px;
-
   background: white;
-
   border-radius: 8px;
-
   overflow: hidden;
-
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
-
   cursor: pointer;
 }
 
 .cauntry img {
   max-width: 300px;
-
   height: 220px;
-
   object-fit: cover;
-
   display: block;
 }
 
@@ -139,13 +99,11 @@ main {
 
 .country-intro h2 {
   margin-bottom: 20px;
-
   font-size: 22px;
 }
 
 .country-intro p {
   margin-top: 10px;
-
   font-size: 15px;
 }
 
@@ -155,9 +113,7 @@ main {
 
 .detail-container {
   display: flex;
-
   align-items: center;
-
   gap: 80px;
 }
 
@@ -171,7 +127,6 @@ main {
 
 .desc-top {
   display: flex;
-
   gap: 80px;
 }
 
@@ -185,27 +140,20 @@ main {
 
 .desc-bottom {
   display: flex;
-
   gap: 15px;
-
   margin-top: 40px;
-
   flex-wrap: wrap;
 }
 
 .desc-bottom span {
   background: white;
-
   padding: 10px 25px;
-
   border-radius: 5px;
-
   box-shadow: 0 0 8px #ddd;
 }
 
 .dark_mode {
   background: #202c37;
-
   color: white;
 }
 
@@ -215,7 +163,6 @@ main {
 .dark_mode select,
 .dark_mode .desc-bottom span {
   background: #2b3945;
-
   color: white;
 }
 
