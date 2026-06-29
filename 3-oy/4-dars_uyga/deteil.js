@@ -112,17 +112,11 @@ ${
     : "<span>No borders</span>"
 }
 
-
+</div>
 
 </div>
 
-
-
 </div>
-
-
-</div>
-
 
 `;
 }
