@@ -24,7 +24,3 @@ formEl.addEventListener("submit", (e) => {
 eyeEl.addEventListener("click", () => {
   userPasswordInputEl.setAttribute("type", "text");
 });
-
-window.deleteUser = function (id) {
-    let new
-};
