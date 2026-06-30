@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web storage</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <form id="user-form">
+      <label for="name">
+        <p>Name</p>
+        <input required type="text" placeholder="name" name="name" id="name" />
+      </label>
+      <label for="lastname">
+        <p>Last Name</p>
+        <input
+          required
+          type="text"
+          placeholder="lastname"
+          name="lastname"
+          id="lastname"
+        />
+      </label>
+      <label for="email">
+        <p>Email</p>
+        <input
+          required
+          type="email"
+          placeholder="enter your email"
+          name="email"
+          id="email"
+        />
+      </label>
+      <label for="password">
+        <p>Password</p>
+        <div class="password-wrap">
+          <input
+            required
+            type="password"
+            placeholder="******"
+            name="password"
+            id="password"
+          />
+          <p class="eye">
+            <i class="fa-solid fa-eye"></i>
+          </p>
+          <p class="eye2 hidden">
+            <i class="fa-chisel fa-regular fa-eye-slash"></i>
+          </p>
+        </div>
+      </label>
+
+      <button>Submit</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>LastName</th>
+          <th>Email</th>
+          <th>password</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script type="module" src="./app.js"></script>
+    <script src="./data.js"></script>
+  </body>
+</html>
