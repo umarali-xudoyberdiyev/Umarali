@@ -1,0 +1,3 @@
+change -- fail inputda fail tanlanganda ishlatiladigan, tanlanganda evont hodisasi createElemant - yangi element (teg) yaratish uchun 
+ishlatiladiganqo'llanilishi document.createElemant("teg_nomi") appendchard- document(html) ga yaratilgan element(teg) qo'shish uchun ishlatiladi 
+qo'llanilishi qo'shiladigan_teg_nomi.appendchard(yaratilgan_element_nomi)
