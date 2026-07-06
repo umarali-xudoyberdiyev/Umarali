@@ -25,4 +25,4 @@ function buy() {
 
 fetch("https://dummyjson.com/products")
   .then((res) => res.json())
-  .then((data) => updateUI(data.products));
+  .then((data) => updateUI(data));
