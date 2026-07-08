@@ -1,0 +1,46 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.completed .text-todo p {
+  text-decoration: line-through;
+  opacity: 0.6;
+  color: #6c757d;
+}
+
+.todo-icons img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-left: 10px;
+}
+
+.todo-icons img:hover {
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none !important;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 450px;
+  z-index: 1001;
+}
