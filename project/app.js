@@ -5,7 +5,29 @@ console.log(TodoWrapEl);
 
 let baseUrl = "https://biyovo1194.pythonanywhere.com/api/v1";
 
-async function UpdateTodo(arr) {
+window.deletetodo = async function (id) {
+  console.log(id);
+
+  try {
+    let res = await fetch(baseUrl + `/tasks/${id}/`, {
+      method: "DELETE",
+    });
+
+    if (!res.ok) {
+      throw new Error("o'chirishda muammo");
+    }
+
+    let data = await res.json();
+    console.log(data);
+    console.log("ochdi");
+  } catch (error) {
+    console.log(error);
+  }
+
+  getTodo();
+};
+
+async function UpdateUi(arr) {
   arr.forEach((item) => {
     TodoWrapEl.innerHTML += `
     <li class="todo-item" data-id="1" data-completed="false">
@@ -48,7 +70,8 @@ async function UpdateTodo(arr) {
                 >
                   ✎
                 </button>
-                <button
+                <button 
+                  onclick="deletetodo(${item.id})"
                   class="icon-btn danger"
                   type="button"
                   title="Delete"
@@ -70,7 +93,7 @@ async function getTodo() {
       throw new Error("olib kelishda muammo");
     }
     let data = await res.json();
-    UpdateTodo(data.data.results);
+    UpdateUi(data.data.results);
   } catch (error) {
     console.log(error);
   }
