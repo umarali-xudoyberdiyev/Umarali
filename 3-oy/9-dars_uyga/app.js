@@ -1,4 +1,3 @@
-// ============ Elementlar ============
 const formEl = document.querySelector('[data-form="create"]');
 const todoList = document.querySelector('[data-list="todos"]');
 const emptyState = document.querySelector('[data-state="empty"]');
