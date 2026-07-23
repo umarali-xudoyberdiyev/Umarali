@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import Search from "./Search";
 import UsersMap from "./UsersMap";
-import { users } from "../data/users";
+import { users as initialUsers } from "../data/users";
 
-// Main - qidiruv state (inputVal) shu yerda saqlanadi.
-// firstName yoki lastName ichida inputVal mavjud bo'lgan
-// userlar filterUsers ichida qoladi va UsersMap ga uzatiladi.
+// Main - qidiruv state (inputVal) va users state shu yerda saqlanadi.
+// users endi state, chunki delete tugmasi bosilganda ro'yxatdan olib tashlash kerak.
 const Main = () => {
   const [inputVal, setInputVal] = useState("");
+  const [users, setUsers] = useState(initialUsers);
+
+  const handleDelete = (id) => {
+    setUsers((prev) => prev.filter((user) => user.id !== id));
+  };
 
   const filterUsers = users.filter((user) => {
     const fullName = `${user.firstName} ${user.lastName}`.toLowerCase();
@@ -26,7 +30,7 @@ const Main = () => {
         <Search value={inputVal} onInput={setInputVal} />
       </div>
 
-      <UsersMap users={filterUsers} />
+      <UsersMap users={filterUsers} onDelete={handleDelete} />
     </main>
   );
 };

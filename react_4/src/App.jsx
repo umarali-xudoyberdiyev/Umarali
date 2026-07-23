@@ -1,12 +1,17 @@
 import React from "react";
-import Search from "./components/Search";
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
+import Fotter from "./components/Fotter";
+import "./index.css";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Search />
+    <div className="flex min-h-screen flex-col bg-slate-950 text-slate-100">
+      <Navbar />
+      <Main />
+      <Fotter />
     </div>
   );
-}
+};
 
 export default App;
