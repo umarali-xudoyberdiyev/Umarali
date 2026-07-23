@@ -1,10 +1,10 @@
 import React from "react";
-import { FaHome } from "react-icons/io5";
+import Search from "./components/Search";
 
 function App() {
   return (
-    <div className="text-9xl">
-      <FaHome />
+    <div>
+      <Search />
     </div>
   );
 }
