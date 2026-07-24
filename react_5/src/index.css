@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+.container {
+  margin: auto;
+  justify-items: center;
+}
+
+.links {
+  gap: 5px;
+}
