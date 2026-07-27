@@ -6,23 +6,31 @@ import Adminpanel from "./pages/Adminpanel";
 import Navbar from "./components/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router";
 
+import MainLayout from "./Layouts/MainLayout";
+
 function App() {
   const routers = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/about",
-      element: <About />,
-    },
-    {
-      path: "/contact",
-      element: <Contact />,
-    },
-    {
-      path: "/admin",
-      element: <Adminpanel />,
+      element: <MainLayout />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+        {
+          path: "/admin",
+          element: <Adminpanel />,
+        },
+      ],
     },
   ]);
 

@@ -1,9 +1,9 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 function Adminpanel() {
   return (
     <div>
-      <Navbar />
       <h1>Adminpanel</h1>
     </div>
   );
