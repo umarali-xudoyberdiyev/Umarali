@@ -1,28 +1,46 @@
-import React from "react";
+import AlbomPages from "./pages/AlbomPages";
+import ProductPages from "./pages/ProductPages";
+import TodoPages from "./pages/TodoPages";
+import UsersPages from "./pages/UsersPages";
 
-import { useState } from "react";
+import React from "react";
+import Navbar from "./companents/Navbar";
+import MainLayout from "./layouts/MainLayout";
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePages from "./pages/HomePages";
 
 function App() {
-  let [todos, setTodos] = useState([]);
+  const routers = createBrowserRouter([
+    {
+      path: "/",
+      element: <MainLayout />,
+      children: [
+        {
+          index: true,
+          element: <HomePages />,
+        },
+        {
+          path: "/users",
+          element: <UsersPages />,
+        },
+        {
+          path: "/todo",
+          element: <TodoPages />,
+        },
+        {
+          path: "/product",
+          element: <ProductPages />,
+        },
+        {
+          path: "/albom",
+          element: <AlbomPages />,
+        },
+      ],
+    },
+  ]);
 
-  async function getData() {
-    try {
-      let res = await fetch("https://jsonplaceholder.typicode.com/posts/1");
-
-      if (!res.ok) {
-        throw new Error("Olib kelishda muammo");
-      }
-
-      let data = await res.json();
-      // console.log(data);
-      setTodos(data);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-  getData();
-  return <div>App</div>;
+  return <RouterProvider router={routers} />;
 }
 
 export default App;
