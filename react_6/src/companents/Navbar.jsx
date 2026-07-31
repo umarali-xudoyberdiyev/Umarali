@@ -15,16 +15,13 @@ function Navbar() {
           Home
         </Link>
         <Link to="/users" className="hover:text-blue-400 transition">
-          Users
+          1
         </Link>
         <Link to="/todo" className="hover:text-blue-400 transition">
-          Todo
+          2
         </Link>
         <Link to="/product" className="hover:text-blue-400 transition">
-          Product
-        </Link>
-        <Link to="/albom" className="hover:text-blue-400 transition">
-          Albom
+          3
         </Link>
       </div>
     </div>
